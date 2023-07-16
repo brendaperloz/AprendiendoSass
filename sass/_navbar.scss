@@ -1,10 +1,15 @@
 @use 'mixinsfunc';
 $selector: '.nav';
 
+$color1: #ff0000;
+$color2: #3fb57a;
+
+
 
 #{$selector}{
 
-    background-color: #3f51b5;
+    background-color: mix($color1, $color2, 50%);
+    
     color: black;
 
     &__container{
@@ -25,7 +30,7 @@ $selector: '.nav';
         }
 
         &:hover{
-            color: black;
+            color:  rgba(black,0.5);
         }
     }
 

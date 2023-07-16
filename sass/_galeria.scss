@@ -15,7 +15,7 @@ $border-width: 1px;
   display: grid;
   grid-template-columns: repeat($grid-columns, 1fr);
   grid-gap: $grid-gap;
-  background-color: #f5f5f5;
+  background-color: darken(#b8daa5,10%);
   border: $border-width solid $border-color;
   margin-bottom: 10px;
   

@@ -7,7 +7,7 @@
   }
   
   .div-botones {
-    background-color: aqua;
+    background-color: lighten(#3fb57a, 10%);
     text-align: center;
     margin-bottom: 10px;
   }
@@ -20,4 +20,19 @@
   .boton-2 {
     @include estilo-boton;
     // Agrega estilos adicionales si es necesario
+  }
+
+  //Uso del @extends
+  .btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #6ece20;
+    background-color: #3ca812;
+    color: #333;
+  }
+  
+  .btn2 {
+    @extend .btn1;
+    font-size: 20px;
+    padding: 15px 30px;
   }
