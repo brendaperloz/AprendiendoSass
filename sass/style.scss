@@ -4,19 +4,5 @@
 @use 'hero';
 @use 'galeria';
 @use 'botones';
+@use 'pagina3';
 
-$color1: #1a0dcf;
-
-h2{
-    color: $color1;
-    font-size: 3rem;
-}
-
-h3{
-    color: #338d7e;
-    font-size: 3rem;
-}
-
-p{
-    color: $color1;
-}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//Variables
+
+$font: 'Montserrat', 'sans-serif';
+$primary-color: #10a7ea;
+$secondary-color: #273746;
+$color-gray: #f9f9f9;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Estilo principal
+
+html,
+body {
+    font-family: $font;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+a {
+    text-decoration: none;
+}
+
+//
+.container3{
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+.large{
+    font-size: 18px;
+}
+
+.display-1{
+    font-size: 6rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    &-dark{
+        background: $secondary-color;
+        border: 1px solid $secondary-color;
+        color: #fff;
+    }
+}
+
+//Navbar
+#navbar3 {
+    height: 12vh;
+    background-color: $primary-color;
+    color: #fff;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a{
+        color: #fff;
+    }
+    .logo{
+        float: left;
+        padding-top: 16px;
+        font-size: 25px;
+    }
+
+    ul{
+        list-style: none;
+        float: right;
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+
+
+//Showcase
+
+#showcase{
+    height: 88vh;
+    padding: 120px 0;
+    background: url('../img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    h1{
+        width: 50%;
+    }
+    p{
+        width: 50%;
+        padding: 15px 0;
+    }
+}
+
+//Acerca de 
+#acerca {
+	padding: 100px 0;
+	h2 {
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	img {
+		width: 100%;
+	}
+
+	.about-flex {
+		display: flex;
+		&-image {
+			flex: 1;
+		}
+		&-description {
+			flex: 1;
+			padding: 20px 40px;
+		}
+	}
+} //End #about
+
+
+@media (max-width: 700px) {
+	// Utility Classes
+	.display-1 {
+		font-size: 4rem;
+	}
+
+	/* Navbar */
+	#navbar3 {
+		height: 100%;
+		.logo {
+			float: none;
+			text-align: center;
+		}
+	} //End #navbar
+
+	// Showcase
+	#showcase {
+		height: 100%;
+		padding: 50px 0;
+	} //End #showcase
+
+	// About
+	#acerca {
+		padding: 50px 0;
+		.about-flex {
+			flex-direction: column;
+			&-description {
+				text-align: center;
+				padding: 20px 0;
+			}
+		} //End #about .about-flex
+	} //End #about
+
+    // Contact
+	#contacto {
+		padding: 80px 0;
+		form {
+			width: 100%;
+		}
+	} //End #contact
+}
