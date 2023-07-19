@@ -1,0 +1,33 @@
+// Form styles
+%form {
+  padding: 60px;
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.form-ln-gray {
+  @extend %form;
+  input {
+    border: 0;
+    border-bottom: 2px solid #c4c4c4;
+  }
+}
+
+.form-sq-wh {
+  @extend %form;
+  input {
+    border: 1px solid #fff;
+    background: #393bb86b;
+    color: #ffff;
+  }
+  ::placeholder {
+    color: #fff;
+  }
+}

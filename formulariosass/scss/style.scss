@@ -1,0 +1,153 @@
+@import 'signup';
+@import 'form';
+@import 'mobile';
+
+// Import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+// Variables
+$light-color: #f86032;
+$dark-color: #4d4d4d;
+$gray-color: #c4c4c4;
+$main-font: 'Montserrat', sans-serif;
+
+// Reset 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Main Styling
+body,
+html {
+  font-family: $main-font;
+}
+
+h1 {
+  font-size: 2.441rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.953rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.563rem;
+}
+
+h1,
+h3 {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+// Utility Classes
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: $dark-color;
+  padding: 13px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: lighten($dark-color, 10%);  
+}
+
+.large {
+  font-size: 1.5rem;
+}
+
+.small {
+  font-size: 0.64rem;
+}
+
+.txt-primary {
+  color: $light-color;
+}
+
+.txt-gray {
+  color: $gray-color;
+}
+
+.p-80 {
+  padding: 80px;
+  // padding-top: 150px;
+}
+
+.bk{
+  background: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+// Cine
+#cine {
+  .cine-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &-bk {
+      background: url('../img/img-login.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      height: 100%;
+    }
+    &-form {
+      padding: 50px;
+      background: #fff;
+      color: $dark-color;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      h2,
+      h3,
+      p {
+        text-align: center;
+      }
+      h2 {
+        padding-bottom: 20px;
+      }
+      form {
+        p {
+          text-align: right;
+        }
+        button {
+          width: 100%;
+          border-radius: 5px;
+        }
+      } //End form
+    } //End &-form
+  } //End .cine-wrap
+} //End #cine

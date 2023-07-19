@@ -1,0 +1,25 @@
+// Signup styles
+#signup {
+  color: #fff;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .signup-form {
+    background: #f86032;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    padding: 60px;
+    display: block;
+    margin: 0 auto;
+    h3 {
+      text-transform: capitalize;
+    }
+    form {
+      button {
+        width: 100%;
+      }
+    } //End form
+  } //End .signup-form
+} //End #signup

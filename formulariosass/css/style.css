@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+#signup {
+  color: #fff;
+}
+#signup h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+#signup .signup-form {
+  background: #f86032;
+  text-align: center;
+  border-radius: 5px;
+  width: 50%;
+  padding: 60px;
+  display: block;
+  margin: 0 auto;
+}
+#signup .signup-form h3 {
+  text-transform: capitalize;
+}
+#signup .signup-form form button {
+  width: 100%;
+}
+
+.form-sq-wh, .form-ln-gray {
+  padding: 60px;
+}
+.form-sq-wh label, .form-ln-gray label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-sq-wh input, .form-ln-gray input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.form-ln-gray input {
+  border: 0;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+.form-sq-wh input {
+  border: 1px solid #fff;
+  background: #f86032;
+  color: #ff;
+}
+.form-sq-wh ::placeholder {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .bk {
+    height: 100%;
+  }
+
+  #cine .cine-wrap {
+    grid-template-columns: 1fr;
+  }
+  #cine .cine-wrap-bk {
+    display: none;
+  }
+  #cine .cine-wrap-form {
+    padding: 0px;
+  }
+
+  #signup .signup-form {
+    width: 100%;
+    padding: 20px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.441rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.953rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.563rem;
+}
+
+h1,
+h3 {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #4d4d4d;
+  padding: 13px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #676767;
+}
+
+.large {
+  font-size: 1.5rem;
+}
+
+.small {
+  font-size: 0.64rem;
+}
+
+.txt-primary {
+  color: #f86032;
+}
+
+.txt-gray {
+  color: #c4c4c4;
+}
+
+.p-80 {
+  padding: 80px;
+}
+
+.bk {
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#cine .cine-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#cine .cine-wrap-bk {
+  background: url("../img/img-login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+}
+#cine .cine-wrap-form {
+  padding: 50px;
+  background: #fff;
+  color: #4d4d4d;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#cine .cine-wrap-form h2,
+#cine .cine-wrap-form h3,
+#cine .cine-wrap-form p {
+  text-align: center;
+}
+#cine .cine-wrap-form h2 {
+  padding-bottom: 20px;
+}
+#cine .cine-wrap-form form p {
+  text-align: right;
+}
+#cine .cine-wrap-form form button {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
